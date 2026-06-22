@@ -26,13 +26,16 @@ th{background:#1c2b1c;color:rgba(255,255,255,.82);font-size:.73rem;text-transfor
 tr.sent-row{opacity:.5}
 tr:hover{background:#fdfaf5}
 .tab-row.hidden{display:none}
+.exp-btn{padding:.45rem 1.1rem;border-radius:999px;border:none;font-size:.78rem;font-weight:600;cursor:pointer;background:#1c2b1c;color:#d4b483;margin-left:.5rem}
 .stats{display:flex;gap:.6rem;margin-bottom:1rem;flex-wrap:wrap}
 .stat{background:#fff;border:1px solid #e8e0d0;border-radius:8px;padding:.5rem 1rem;font-size:.8rem;color:#7a6a5a}
 .stat b{color:#1c2b1c;font-size:1rem}
 </style>
 </head><body>
 
-<h1>📋 Agriturismo, Hotel & Ristoranti — Parma</h1>
+<h1>📋 Agriturismo, Hotel & Ristoranti — Parma
+<button class="exp-btn" onclick="esportaInviati()">⬇ Esporta inviati</button>
+</h1>
 
 <div class="tabs">
   <button class="tab-btn active" onclick="showTab('agri',this)">
@@ -1443,6 +1446,16 @@ function showTab(id, btn) {
   localStorage.setItem('dash_tab', id);
 }
 
+function esportaInviati() {
+  var s = get();
+  var lista = Object.keys(s).filter(k => s[k]);
+  var blob = new Blob([JSON.stringify(lista, null, 2)], {type: 'application/json'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = '_inviati.json';
+  a.click();
+  alert('Salva il file _inviati.json nella cartella agriturismo/ del progetto.');
+}
 function tog(btn) {
   var k=btn.dataset.key, s=get(); s[k]=!s[k];
   localStorage.setItem('inv_agri', JSON.stringify(s));
