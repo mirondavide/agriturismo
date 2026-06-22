@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agriturismo Il Gelso - Ristorante e Hotel — Agriturismo a Traversetolo PR</title>
+<meta name="description" content="Agriturismo Il Gelso - Ristorante e Hotel: agriturismo esclusivo a Traversetolo PR. Camere di charme, cucina del territorio, natura autentica. Prenota direttamente al miglior prezzo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#1c2b1c;
+  --oro:#b8945a;
+  --oro-light:#d4b483;
+  --crema:#f8f3ea;
+  --crema2:#f0e8d6;
+  --testo:#2a1f0e;
+  --grigio:#7a6a5a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;color:var(--testo);background:var(--crema);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+/* ─── CURSOR ─── */
+*{cursor:none}
+.cursor{width:8px;height:8px;background:var(--oro);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9999;transition:transform .12s ease}
+.cursor-ring{width:34px;height:34px;border:1px solid var(--oro);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9998;transition:transform .07s ease}
+
+/* ─── NAV ─── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.4rem 3rem;display:flex;align-items:center;justify-content:space-between;transition:all .4s}
+nav.scrolled{background:rgba(28,43,28,.96);backdrop-filter:blur(14px);padding:1rem 3rem;box-shadow:0 2px 28px rgba(0,0,0,.25)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:#fff;letter-spacing:.06em}
+.nav-links{display:flex;gap:2.2rem;align-items:center}
+.nav-links a{color:rgba(255,255,255,.75);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;transition:color .25s}
+.nav-links a:hover{color:var(--oro-light)}
+.nav-cta{background:var(--oro);color:#fff!important;padding:.5rem 1.2rem;border-radius:2px}
+@media(max-width:768px){.nav-links{display:none}nav,nav.scrolled{padding:1.1rem 1.4rem}}
+
+/* ─── HERO ─── */
+.hero{
+  height:100vh;min-height:600px;position:relative;overflow:hidden;
+  background-color:var(--verde);
+  background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZNpoWKZc9KJHrmJEdR5Ijv3kZlu5Oh-RgsoKqoBrtHLCK2mIn4qTk5cF8rxZhxWRIzQVCmrLh8u_0UoEktuM-4CurqFBfeWEMWd8GfY04Qb7fDqUO1nofRAptS5nsSjOh7g1O70gOFqSaCHIA=s4800-w900');
+  background-size:cover;background-position:center;
+}
+.hero-inner{position:absolute;inset:0;background:linear-gradient(135deg,rgba(20,35,20,.75) 0%,rgba(0,0,0,.25) 70%)}
+.hero-text{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 6vw;padding-top:80px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:.8rem;color:var(--oro-light);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:1.2rem;opacity:0;animation:fadeUp .8s .2s forwards}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';height:1px;width:28px;background:var(--oro-light);flex-shrink:0}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,7.5vw,6.5rem);font-weight:300;color:#fff;line-height:1.02;opacity:0;animation:fadeUp .8s .4s forwards}
+.hero h1 em{font-style:italic;color:var(--oro-light)}
+.hero-sub{font-size:.88rem;color:rgba(255,255,255,.72);margin-top:1.2rem;line-height:1.75;opacity:0;animation:fadeUp .8s .6s forwards;max-width:400px}
+.hero-actions{display:flex;gap:1rem;margin-top:2.4rem;opacity:0;animation:fadeUp .8s .8s forwards;flex-wrap:wrap}
+.btn-oro{display:inline-block;background:var(--oro);color:#fff;padding:.82rem 2rem;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:background .3s,transform .2s}
+.btn-oro:hover{background:var(--oro-light);transform:translateY(-2px)}
+.btn-ghost{display:inline-block;border:1px solid rgba(255,255,255,.45);color:#fff;padding:.82rem 2rem;font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:all .3s}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.hero-badge{position:absolute;bottom:2.5rem;right:2.5rem;background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);padding:1rem 1.3rem;border-radius:8px;color:#fff;text-align:center}
+.hero-badge .stars{color:#f5c842;font-size:1rem;letter-spacing:.06em}
+.hero-badge .num{font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:600;display:block;line-height:1}
+.hero-badge .lbl{font-size:.65rem;letter-spacing:.1em;opacity:.65;text-transform:uppercase}
+.scroll-hint{position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.35rem;color:rgba(255,255,255,.4);font-size:.65rem;letter-spacing:.18em;text-transform:uppercase}
+.scroll-line{width:1px;height:38px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.4));animation:lineGrow 2s ease infinite}
+@keyframes lineGrow{0%,100%{opacity:0;height:0}50%{opacity:1;height:38px}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* ─── NUMERI ─── */
+.numeri{background:var(--verde);padding:4.5rem 2rem;display:flex;justify-content:center;flex-wrap:wrap}
+.num-item{text-align:center;padding:1.8rem 3rem;border-right:1px solid rgba(255,255,255,.08);flex:1;min-width:140px}
+.num-item:last-child{border-right:none}
+.num-val{font-family:'Cormorant Garamond',serif;font-size:3.4rem;font-weight:300;color:var(--oro-light);display:block;line-height:1}
+.num-lbl{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:.4rem;display:block}
+
+/* ─── REVEAL ─── */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .75s ease,transform .75s ease}
+.reveal.on{opacity:1;transform:translateY(0)}
+.reveal-l{opacity:0;transform:translateX(-36px);transition:opacity .75s ease,transform .75s ease}
+.reveal-l.on{opacity:1;transform:translateX(0)}
+.reveal-r{opacity:0;transform:translateX(36px);transition:opacity .75s ease,transform .75s ease}
+.reveal-r.on{opacity:1;transform:translateX(0)}
+
+/* ─── CHI SIAMO ─── */
+.chi-siamo{display:grid;grid-template-columns:1fr 1fr}
+@media(max-width:768px){.chi-siamo{grid-template-columns:1fr}}
+.chi-img{
+  min-height:540px;position:relative;overflow:hidden;
+  background-color:var(--verde);
+  background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZPlvfN4ySf3c5FACnxT4h1qOpy4IFW8IHFUWAUvzWk0KEYCP8ELktrylcDltliyhcd7aetQMfcwFWsLGnDLY48BLc8mBdx-uQVF3iRQPOpKEC3mzjNiZxl4YMRF6TzyoaVrHkJUAlR1AHM129w=s4800-w900');
+  background-size:cover;background-position:center;
+  transition:background-position .6s ease;
+}
+.chi-img:hover{background-position:center 55%}
+.chi-img-overlay{position:absolute;bottom:2rem;left:2rem;background:var(--verde);color:var(--oro-light);padding:1.1rem 1.4rem;font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;max-width:210px;line-height:1.5}
+.chi-testo{background:var(--crema2);display:flex;flex-direction:column;justify-content:center;padding:5rem 4rem}
+@media(max-width:768px){.chi-testo{padding:3rem 1.4rem}}
+.lbl{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--oro);font-weight:600;margin-bottom:.9rem;display:block}
+.chi-testo h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:300;line-height:1.18;margin-bottom:1.4rem}
+.chi-testo p{color:var(--grigio);line-height:1.9;font-size:.92rem;margin-bottom:.9rem}
+.firma{margin-top:2rem;display:flex;align-items:center;gap:1rem;padding-top:1.4rem;border-top:1px solid rgba(0,0,0,.08)}
+.firma-line{width:36px;height:2px;background:var(--oro);flex-shrink:0}
+.firma-nome{font-family:'Cormorant Garamond',serif;font-size:.98rem;font-style:italic;color:var(--grigio)}
+
+/* ─── GALLERY ─── */
+.gallery-section{padding:6rem 3rem}
+@media(max-width:768px){.gallery-section{padding:4rem 1rem}}
+.section-hdr{text-align:center;margin-bottom:3rem}
+.section-hdr h2{font-family:'Cormorant Garamond',serif;font-size:2.9rem;font-weight:300;margin-top:.5rem}
+.gallery-grid{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:280px 280px;gap:.4rem}
+.g-big{grid-row:span 2}
+.g-item{overflow:hidden;border-radius:3px;background-color:var(--crema2)}
+.g-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s ease}
+.g-item:hover img{transform:scale(1.06)}
+@media(max-width:768px){.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.g-big{grid-row:span 1}}
+
+/* ─── CAMERE ─── */
+.camere-section{background:var(--verde);padding:6rem 3rem}
+@media(max-width:768px){.camere-section{padding:4rem 1rem}}
+.camere-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem;margin-top:2.8rem}
+.cam-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:5px;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.cam-card:hover{transform:translateY(-5px);box-shadow:0 18px 50px rgba(0,0,0,.3)}
+.cam-img{height:210px;overflow:hidden;background-color:rgba(255,255,255,.06)}
+.cam-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s}
+.cam-card:hover .cam-img img{transform:scale(1.07)}
+.cam-body{padding:1.4rem}
+.cam-body h3{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:#fff;font-weight:400;margin-bottom:.4rem}
+.cam-body p{color:rgba(255,255,255,.45);font-size:.81rem;line-height:1.7}
+.cam-tags{display:flex;gap:.4rem;margin-top:.9rem;flex-wrap:wrap}
+.cam-tag{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.55);padding:.22rem .65rem;border-radius:999px;font-size:.7rem}
+
+/* ─── CUCINA ─── */
+.cucina-section{display:grid;grid-template-columns:1fr 1fr}
+@media(max-width:768px){.cucina-section{grid-template-columns:1fr}}
+.cucina-img{
+  min-height:520px;
+  background-color:var(--verde);
+  background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZMCn901QSNxhGFFrcxssW4FJ-u0GLFcZvf1q6tIAqPI7Uk0illowR9ddbKQN0v5f0JhlJfYb213dYOPUkmRm5iXE7WqcALNlUwJ_98q0eF4xhGl21H5YbwJXJqXwlIlvRRWd3ITYV4mfNxb5zg=s4800-w900');
+  background-size:cover;background-position:center;
+}
+.cucina-testo{background:var(--crema);padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center}
+@media(max-width:768px){.cucina-testo{padding:3rem 1.4rem}}
+.cucina-testo h2{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;margin-bottom:1.1rem;line-height:1.2}
+.cucina-testo p{color:var(--grigio);line-height:1.9;font-size:.92rem;margin-bottom:1.4rem}
+.piatti{display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-top:.5rem}
+.piatto{background:#fff;padding:.75rem .9rem;border-radius:3px;font-size:.8rem;color:var(--testo);display:flex;align-items:center;gap:.45rem;box-shadow:0 1px 5px rgba(0,0,0,.05)}
+.piatto::before{content:'✦';color:var(--oro);font-size:.65rem;flex-shrink:0}
+
+/* ─── MAPPA ─── */
+.mappa-section{padding:6rem 3rem;background:var(--crema2)}
+@media(max-width:768px){.mappa-section{padding:4rem 1rem}}
+.mappa-inner{display:grid;grid-template-columns:1fr 2fr;gap:3rem;align-items:start}
+@media(max-width:768px){.mappa-inner{grid-template-columns:1fr}}
+.mappa-info h2{font-family:'Cormorant Garamond',serif;font-size:2.3rem;font-weight:300;margin-bottom:1rem;line-height:1.2}
+.info-row{display:flex;gap:.75rem;margin-bottom:.8rem;align-items:flex-start}
+.info-ico{flex-shrink:0;margin-top:.1rem;color:var(--oro)}
+.info-txt{font-size:.84rem;color:var(--grigio);line-height:1.6}
+.mappa-frame{border-radius:6px;overflow:hidden;box-shadow:0 6px 32px rgba(0,0,0,.1)}
+.mappa-frame iframe{width:100%;height:380px;border:none;display:block}
+
+/* ─── CTA ─── */
+.cta-section{
+  position:relative;padding:8rem 2rem;text-align:center;
+  background-color:var(--verde);
+  background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZPkaKcW4QW_4opEyW9P-oBy-lHcliHB3jey3ceBR6apDOR22WInTwO6QHCJ3wlFqe-XCRjTzMb-wlvexSoL6XmCRYTrxMsH2K8O76VclRD6h-mJ4xssjPZMJ6KRdhtEa-ucHziKjdOw-Vk3=s4800-w900');
+  background-size:cover;background-position:center;
+}
+.cta-overlay{position:absolute;inset:0;background:rgba(20,34,20,.83)}
+.cta-inner{position:relative;z-index:2}
+.cta-inner .lbl{color:var(--oro-light)}
+.cta-inner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:300;color:#fff;margin:.6rem 0}
+.cta-inner p{color:rgba(255,255,255,.6);max-width:460px;margin:0 auto 2.4rem;line-height:1.8;font-size:.9rem}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ─── FOOTER ─── */
+footer{background:#0e160e;color:rgba(255,255,255,.35);padding:2.8rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--oro-light);display:block;margin-bottom:.3rem}
+footer p{font-size:.76rem;line-height:1.8}
+
+/* ─── FLOAT ─── */
+.wa-float{position:fixed;bottom:2rem;right:2rem;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;z-index:200;box-shadow:0 4px 18px rgba(37,211,102,.4);transition:transform .25s}
+.wa-float:hover{transform:scale(1.1)}
+.demo-tag{position:fixed;top:76px;right:1.4rem;background:var(--oro);color:#fff;padding:.38rem .9rem;border-radius:999px;font-size:.7rem;font-weight:600;z-index:200;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+</style>
+</head>
+<body>
+
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="curR"></div>
+
+<nav id="nav">
+  <div class="nav-logo">Agriturismo Il Gelso - Ristorante e Hotel</div>
+  <div class="nav-links">
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#camere">Camere</a>
+    <a href="#cucina">Cucina</a>
+    <a href="#dove-siamo">Dove siamo</a>
+    <a href="#prenota" class="nav-cta">Prenota</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner"></div>
+  <div class="hero-text">
+    <span class="hero-eyebrow">Agriturismo · Traversetolo PR</span>
+    <h1>Il Gelso Ristorante<br><em>da scoprire</em></h1>
+    <p class="hero-sub">Natura autentica, sapori veri, ospitalità di cuore. A pochi minuti da Traversetolo PR, un altro ritmo esiste.</p>
+    <div class="hero-actions">
+      <a href="#prenota" class="btn-oro">Prenota ora</a>
+      <a href="#chi-siamo" class="btn-ghost">Scopri di più</a>
+    </div>
+  </div>
+  <div class="hero-badge">
+    <div class="stars">★★★★★</div>
+    <span class="num">3.6</span>
+    <span class="lbl">200 recensioni</span>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    Scroll
+  </div>
+</section>
+
+<!-- NUMERI -->
+<div class="numeri">
+  <div class="num-item reveal"><span class="num-val">200+</span><span class="num-lbl">Recensioni Google</span></div>
+  <div class="num-item reveal" style="transition-delay:.1s"><span class="num-val">3.6</span><span class="num-lbl">Valutazione media</span></div>
+  <div class="num-item reveal" style="transition-delay:.2s"><span class="num-val">100%</span><span class="num-lbl">Prenotazione diretta</span></div>
+  <div class="num-item reveal" style="transition-delay:.3s"><span class="num-val">0%</span><span class="num-lbl">Commissioni</span></div>
+</div>
+
+<!-- CHI SIAMO -->
+<div class="chi-siamo" id="chi-siamo">
+  <div class="chi-img reveal-l">
+    <div class="chi-img-overlay">"Un posto dove il tempo scorre diversamente"</div>
+  </div>
+  <div class="chi-testo">
+    <span class="lbl reveal">La nostra storia</span>
+    <h2 class="reveal">Un'ospitalità<br>che viene<br>dal cuore</h2>
+    <p class="reveal">Agriturismo Il Gelso - Ristorante e Hotel è un Traversetolo PR con 200 recensioni su Google. Un posto autentico dove l&#x27;ospitalità è di casa, immerso nella campagna parmense.</p>
+    <div class="firma reveal">
+      <div class="firma-line"></div>
+      <span class="firma-nome">La famiglia di Agriturismo Il Gelso - Ristorante e Hotel</span>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery-section">
+  <div class="section-hdr reveal">
+    <span class="lbl">Le nostre foto</span>
+    <h2>Lasciati ispirare</h2>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="g-item g-big"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNpoWKZc9KJHrmJEdR5Ijv3kZlu5Oh-RgsoKqoBrtHLCK2mIn4qTk5cF8rxZhxWRIzQVCmrLh8u_0UoEktuM-4CurqFBfeWEMWd8GfY04Qb7fDqUO1nofRAptS5nsSjOh7g1O70gOFqSaCHIA=s4800-w900" alt="" loading="lazy"></div>
+<div class="g-item"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPlvfN4ySf3c5FACnxT4h1qOpy4IFW8IHFUWAUvzWk0KEYCP8ELktrylcDltliyhcd7aetQMfcwFWsLGnDLY48BLc8mBdx-uQVF3iRQPOpKEC3mzjNiZxl4YMRF6TzyoaVrHkJUAlR1AHM129w=s4800-w900" alt="" loading="lazy"></div>
+<div class="g-item"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMCn901QSNxhGFFrcxssW4FJ-u0GLFcZvf1q6tIAqPI7Uk0illowR9ddbKQN0v5f0JhlJfYb213dYOPUkmRm5iXE7WqcALNlUwJ_98q0eF4xhGl21H5YbwJXJqXwlIlvRRWd3ITYV4mfNxb5zg=s4800-w900" alt="" loading="lazy"></div>
+<div class="g-item"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPkaKcW4QW_4opEyW9P-oBy-lHcliHB3jey3ceBR6apDOR22WInTwO6QHCJ3wlFqe-XCRjTzMb-wlvexSoL6XmCRYTrxMsH2K8O76VclRD6h-mJ4xssjPZMJ6KRdhtEa-ucHziKjdOw-Vk3=s4800-w900" alt="" loading="lazy"></div>
+<div class="g-item"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPLmosS-cfVmQ-Bp8-F6AZLfk5KkULvnP0oQfC-h4MGYPKdWyedwoVimedPGAB-Nv8Buwql2RKSi1NfGWcTbNYbYxb4DUFM4q5Mn6hNOwbV6HP5W2EDG8Zb6yfLmDOp5p3GI7bpULyHrMIOeQ=s4800-w900" alt="" loading="lazy"></div>
+
+  </div>
+</div>
+
+<!-- CAMERE -->
+<div class="camere-section" id="camere">
+  <div class="section-hdr reveal">
+    <span class="lbl" style="color:var(--oro-light)">Dove dormi</span>
+    <h2 style="color:#fff;font-family:'Cormorant Garamond',serif;font-size:2.9rem;font-weight:300;margin-top:.5rem">Le nostre camere</h2>
+  </div>
+  <div class="camere-grid">
+    <div class="cam-card reveal">
+      <div class="cam-img"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNVOklHsIW6TueS8cwQi1TlfSBzSywOwv6XSsAlD5vxJDR3dL5gmR1w5yHuQcxmGbrx81WaKH6pO9Yh7-a6t0VBJpWOMas9F_pRzZClpaQIZwSx_dKQk-qgywMIiZXU3c_UDboNPGcLAOMlDA=s4800-w900" alt="" loading="lazy"></div>
+      <div class="cam-body">
+        <h3>Camera Classic</h3>
+        <p>Arredata con gusto rustico, luce naturale, bagno privato. Il posto giusto per ricaricarsi.</p>
+        <div class="cam-tags"><span class="cam-tag">WiFi</span><span class="cam-tag">Aria condizionata</span><span class="cam-tag">Colazione</span></div>
+      </div>
+    </div>
+    <div class="cam-card reveal" style="transition-delay:.12s">
+      <div class="cam-img"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNqaG9pxMpBU1_U7uonej02MMkzqMBIzRmbONhcYBBh8Cbz2Ls6Y6f1jEnqr_eNqGF14XBfYqckKDpIJ9WtHsgpJyivqBEXPFT9gHudP-Ncvc5LUbnvabD-EWQVtr8cnp72e_KzbKLAWjMU=s4800-w900" alt="" loading="lazy"></div>
+      <div class="cam-body">
+        <h3>Camera Superior</h3>
+        <p>Vista sul verde, terrazza privata, più spazio per rilassarsi. La scelta di chi vuole il meglio.</p>
+        <div class="cam-tags"><span class="cam-tag">Terrazza</span><span class="cam-tag">Vista giardino</span><span class="cam-tag">Minibar</span></div>
+      </div>
+    </div>
+    <div class="cam-card reveal" style="transition-delay:.24s">
+      <div class="cam-img"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPgTpGPiBvZno3MG-flB9Aq00mRLJFEzGZEuqvrMy7mBrR2mcaz13lIWGdMExptKT17GDmgT-tnfqPea7XI6BaUy0Xk1bXUIiCXqAYambOBV8ZoLq_RfMQUfhe7JOc0hPIO3rZPNu9-DDZoJaU=s4800-w900" alt="" loading="lazy"></div>
+      <div class="cam-body">
+        <h3>Suite Famiglia</h3>
+        <p>Due ambienti separati, perfetti per famiglie o coppie che cercano più privacy e spazio.</p>
+        <div class="cam-tags"><span class="cam-tag">2 stanze</span><span class="cam-tag">Angolo cucina</span><span class="cam-tag">Soggiorno</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CUCINA -->
+<div class="cucina-section" id="cucina">
+  <div class="cucina-img reveal-l"></div>
+  <div class="cucina-testo">
+    <span class="lbl reveal">La nostra cucina</span>
+    <h2 class="reveal">Sapori che<br>raccontano<br>Traversetolo PR</h2>
+    <p class="reveal">Prodotti a km 0, ricette tramandate di generazione in generazione, materie prime del territorio. Ogni pasto è un viaggio nella tradizione parmense.</p>
+    <div class="piatti reveal">
+      <div class="piatto">Culatello di Zibello DOP</div>
+      <div class="piatto">Pasta fresca fatta a mano</div>
+      <div class="piatto">Parmigiano Reggiano</div>
+      <div class="piatto">Lambrusco locale</div>
+      <div class="piatto">Tortelli d'erbetta</div>
+      <div class="piatto">Dolci della tradizione</div>
+    </div>
+  </div>
+</div>
+
+<!-- DOVE SIAMO -->
+<div class="mappa-section" id="dove-siamo">
+  <div class="mappa-inner">
+    <div>
+      <span class="lbl reveal">Come arrivare</span>
+      <h2 class="mappa-info reveal" style="font-family:'Cormorant Garamond',serif;font-size:2.3rem;font-weight:300;margin-bottom:1rem;line-height:1.2">Dove<br>trovarci</h2>
+      <div class="info-row reveal"><span class="info-ico">📍</span><span class="info-txt">Via Gandazzi, 85, 43029 Traversetolo PR</span></div>
+      <div class="info-row reveal" style="transition-delay:.1s"><span class="info-ico">📞</span><span class="info-txt"><a href="tel:348 776 4105">348 776 4105</a></span></div>
+      <div class="info-row reveal" style="transition-delay:.2s"><span class="info-ico">🕐</span><span class="info-txt">Aperto tutto l&#x27;anno · Check-in 15:00–20:00</span></div>
+    </div>
+    <div class="mappa-frame reveal-r">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?query=Via%20Gandazzi%2C%2085%2C%2043029%20Traversetolo%20PR&amp;layer=mapnik" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section" id="prenota">
+  <div class="cta-overlay"></div>
+  <div class="cta-inner">
+    <span class="lbl reveal">Prenota ora</span>
+    <h2 class="reveal">Il tuo prossimo<br>weekend inizia qui</h2>
+    <p class="reveal">Prenota direttamente con noi. Niente commissioni, niente intermediari — solo il prezzo migliore garantito.</p>
+    <div class="cta-btns reveal">
+      <a href="tel:348 776 4105" class="btn-oro">📞 Chiama ora</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Via%20Gandazzi%2C%2085%2C%2043029%20Traversetolo%20PR" target="_blank" class="btn-ghost">📍 Come arrivare</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <span class="footer-brand">Agriturismo Il Gelso - Ristorante e Hotel</span>
+    <p>Via Gandazzi, 85, 43029 Traversetolo PR<br>Tel: <a href="tel:348 776 4105" style="color:var(--oro-light)">348 776 4105</a></p>
+  </div>
+  <div>
+    <p style="color:rgba(255,255,255,.18);font-size:.7rem;text-align:right">Sito dimostrativo realizzato da Davide · 379 210 6196</p>
+  </div>
+</footer>
+
+<div class="demo-tag">👁 Anteprima</div>
+<a href="https://wa.me/393487764105" class="wa-float" target="_blank">💬</a>
+
+<script>
+// Cursor
+const cur = document.getElementById('cur'), curR = document.getElementById('curR');
+document.addEventListener('mousemove', e => {
+  cur.style.transform = `translate(${e.clientX-4}px,${e.clientY-4}px)`;
+  curR.style.transform = `translate(${e.clientX-17}px,${e.clientY-17}px)`;
+});
+
+// Nav
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', scrollY > 50);
+});
+
+// Scroll reveal
+const io = new IntersectionObserver(es => {
+  es.forEach(e => { if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)} });
+}, {threshold: 0.1});
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
