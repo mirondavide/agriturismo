@@ -35,6 +35,7 @@ tr:hover{background:#fdfaf5}
 
 <h1>📋 Agriturismo, Hotel & Ristoranti — Parma
 <button class="exp-btn" onclick="esportaInviati()">⬇ Esporta inviati</button>
+<button class="exp-btn" onclick="importaInviati()">⬆ Importa inviati</button>
 </h1>
 
 <div class="tabs">
@@ -42,27 +43,27 @@ tr:hover{background:#fdfaf5}
     🏡 Agriturismo & Hotel <span style="opacity:.6">(90)</span>
   </button>
   <button class="tab-btn" onclick="showTab('risto',this)">
-    🍽 Ristoranti <span style="opacity:.6">(100)</span>
+    🍽 Ristoranti <span style="opacity:.6">(106)</span>
   </button>
   <button class="tab-btn" onclick="showTab('pizze',this)">
-    🍕 Pizzerie <span style="opacity:.6">(257)</span>
+    🍕 Pizzerie <span style="opacity:.6">(256)</span>
   </button>
 </div>
 
 <div class="stats" id="stats-agri">
   <div class="stat"><b>44</b><br>WhatsApp</div>
-  <div class="stat"><b>25</b><br>Email</div>
-  <div class="stat"><b>69</b><br>Totale</div>
+  <div class="stat"><b>26</b><br>Email</div>
+  <div class="stat"><b>70</b><br>Totale</div>
 </div>
 <div class="stats hidden" id="stats-risto">
-  <div class="stat"><b>3</b><br>WhatsApp</div>
+  <div class="stat"><b>5</b><br>WhatsApp</div>
   <div class="stat"><b>13</b><br>Email</div>
-  <div class="stat"><b>16</b><br>Totale</div>
+  <div class="stat"><b>18</b><br>Totale</div>
 </div>
 <div class="stats hidden" id="stats-pizze">
-  <div class="stat"><b>22</b><br>WhatsApp</div>
+  <div class="stat"><b>23</b><br>WhatsApp</div>
   <div class="stat"><b>21</b><br>Email</div>
-  <div class="stat"><b>43</b><br>Totale</div>
+  <div class="stat"><b>44</b><br>Totale</div>
 </div>
 
 <table>
@@ -137,16 +138,8 @@ tr:hover{background:#fdfaf5}
 <td><a class="b demo" href="https://mirondavide.com/agriturismo/agriturismo-il-gelso-ristorante-e-hotel/" target="_blank">Vedi sito</a></td>
 <td><a class="b wa" href="https://wa.me/393487764105?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20nuova%20del%20sito%20per%20Il%20Gelso%20Ristorante.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-il-gelso-ristorante-e-hotel/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-il-gelso-ristorante-e-hotel" onclick="tog(this)">○ Da inviare</button></td>
-</tr><tr class="tab-row agri" id="r-agri-santa-felicita">
-<td>9</td>
-<td><b>Santa Felicita</b><br><span class="muted">Parma PR</span></td>
-<td><span class="tag" style="background:#ea580c">SITO MORTO</span><br><span class="muted">il sito non si apre</span></td>
-<td>199 ⭐</td>
-<td><a class="b demo" href="https://mirondavide.com/agriturismo/santa-felicita/" target="_blank">Vedi sito</a></td>
-<td><a class="b wa" href="https://wa.me/393472386108?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20nuova%20del%20sito%20per%20Santa%20Felicita.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/santa-felicita/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
-<td><button class="inv-btn" data-key="agri-santa-felicita" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-leoni">
-<td>10</td>
+<td>9</td>
 <td><b>Agriturismo Leoni</b><br><span class="muted">Vicofertile PR</span></td>
 <td><span class="tag" style="background:#ea580c">SITO MORTO</span><br><span class="muted">il sito non si apre</span></td>
 <td>148 ⭐</td>
@@ -154,7 +147,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393394129861?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20nuova%20del%20sito%20per%20Leoni.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-leoni/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-leoni" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-la-fattoria-del-boschetto">
-<td>11</td>
+<td>10</td>
 <td><b>Agriturismo La Fattoria del Boschetto</b><br><span class="muted">Casalbarbato PR</span></td>
 <td><span class="tag" style="background:#ea580c">SITO MORTO</span><br><span class="muted">il sito non si apre</span></td>
 <td>148 ⭐</td>
@@ -162,7 +155,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393389802543?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20nuova%20del%20sito%20per%20La%20Fattoria%20del.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-la-fattoria-del-boschetto/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-la-fattoria-del-boschetto" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-ariediparma">
-<td>12</td>
+<td>11</td>
 <td><b>AriediParma</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#ea580c">SITO MORTO</span><br><span class="muted">il sito non si apre</span></td>
 <td>95 ⭐</td>
@@ -170,7 +163,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393381264438?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20nuova%20del%20sito%20per%20AriediParma.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ariediparma/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-ariediparma" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-az-agricola-le-colline-della-luna">
-<td>13</td>
+<td>12</td>
 <td><b>Az. agricola Le colline della Luna</b><br><span class="muted">Medesano PR</span></td>
 <td><span class="tag" style="background:#ea580c">SITO MORTO</span><br><span class="muted">il sito non si apre</span></td>
 <td>45 ⭐</td>
@@ -178,7 +171,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393289636693?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20nuova%20del%20sito%20per%20Az.%20agricola%20Le.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/az-agricola-le-colline-della-luna/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-az-agricola-le-colline-della-luna" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-villino-della-duchessa">
-<td>14</td>
+<td>13</td>
 <td><b>Villino della Duchessa</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#ea580c">SITO MORTO</span><br><span class="muted">il sito non si apre</span></td>
 <td>3 ⭐</td>
@@ -186,7 +179,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393384334869?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20nuova%20del%20sito%20per%20Villino%20della%20Duchessa.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/villino-della-duchessa/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-villino-della-duchessa" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-san-giuseppe">
-<td>15</td>
+<td>14</td>
 <td><b>Agriturismo San Giuseppe</b><br><span class="muted">Gattatico RE</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1218 ⭐</td>
@@ -194,7 +187,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393201597700?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20San%20Giuseppe.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-san-giuseppe/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a> <a class="b em" href="mailto:info@agriturismosangiuseppe.com?subject=Sito%20nuovo%20per%20San%20Giuseppe&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20San%20Giuseppe.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-san-giuseppe/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-san-giuseppe" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-san-bruno-della-certosa">
-<td>16</td>
+<td>15</td>
 <td><b>Agriturismo San Bruno della Certosa</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>879 ⭐</td>
@@ -202,7 +195,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393395477357?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20San%20Bruno%20della.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-san-bruno-della-certosa/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a> <a class="b em" href="mailto:info@sanbrunodellacertosa.com?subject=Sito%20nuovo%20per%20San%20Bruno%20della&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20San%20Bruno%20della.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-san-bruno-della-certosa/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-san-bruno-della-certosa" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-az-agr-agriturismo-acqua-terra-sole">
-<td>17</td>
+<td>16</td>
 <td><b>Az. Agr. Agriturismo Acqua Terra Sole</b><br><span class="muted">San Michele Tiorre PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, template economico</span></td>
 <td>710 ⭐</td>
@@ -210,7 +203,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393348229472?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Az.%20Agr.%20Agriturismo.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/az-agr-agriturismo-acqua-terra-sole/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-az-agr-agriturismo-acqua-terra-sole" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-fattoria-marchesini">
-<td>18</td>
+<td>17</td>
 <td><b>Agriturismo Fattoria Marchesini</b><br><span class="muted">Praticello RE</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>511 ⭐</td>
@@ -218,7 +211,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@fattoriamarchesini.it?subject=Sito%20nuovo%20per%20Marchesini&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Marchesini.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-fattoria-marchesini/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-fattoria-marchesini" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-ristorante-antica-tenuta-santa-teresa">
-<td>19</td>
+<td>18</td>
 <td><b>Ristorante Antica Tenuta Santa Teresa</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, non adatto al telefono</span></td>
 <td>457 ⭐</td>
@@ -226,7 +219,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393482491140?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Antica%20Tenuta%20Santa.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-antica-tenuta-santa-teresa/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-ristorante-antica-tenuta-santa-teresa" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-le-carovane">
-<td>20</td>
+<td>19</td>
 <td><b>Agriturismo Le Carovane</b><br><span class="muted">Compiano PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, non adatto al telefono, copyright 2011</span></td>
 <td>439 ⭐</td>
@@ -234,7 +227,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@carovane.com?subject=Sito%20nuovo%20per%20Le%20Carovane&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Le%20Carovane.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-le-carovane/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-le-carovane" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-hotel-daniel-parma-ristorante-cocchi">
-<td>21</td>
+<td>20</td>
 <td><b>Hotel Daniel Parma &amp; Ristorante Cocchi</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>422 ⭐</td>
@@ -242,7 +235,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@hoteldaniel.biz?subject=Sito%20nuovo%20per%20Daniel%20Parma%20Ristorante&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Daniel%20Parma%20Ristorante.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/hotel-daniel-parma-ristorante-cocchi/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-hotel-daniel-parma-ristorante-cocchi" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-argaland">
-<td>22</td>
+<td>21</td>
 <td><b>Agriturismo Argaland</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>414 ⭐</td>
@@ -250,7 +243,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393460126573?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Argaland.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-argaland/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a> <a class="b em" href="mailto:info@argaland.net?subject=Sito%20nuovo%20per%20Argaland&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Argaland.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-argaland/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-argaland" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-alba-del-borgo">
-<td>23</td>
+<td>22</td>
 <td><b>Alba del Borgo</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>338 ⭐</td>
@@ -258,7 +251,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@albadelborgo.it?subject=Sito%20nuovo%20per%20Alba%20del%20Borgo&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Alba%20del%20Borgo.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/alba-del-borgo/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-alba-del-borgo" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-dmora-retreat">
-<td>24</td>
+<td>23</td>
 <td><b>Dmora Retreat</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>325 ⭐</td>
@@ -266,7 +259,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393245533740?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Dmora%20Retreat.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/dmora-retreat/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-dmora-retreat" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-casarossa">
-<td>25</td>
+<td>24</td>
 <td><b>Agriturismo Casarossa</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>290 ⭐</td>
@@ -274,7 +267,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393338379922?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Casarossa.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-casarossa/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a> <a class="b em" href="mailto:info@poderecasarossa.it?subject=Sito%20nuovo%20per%20Casarossa&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Casarossa.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-casarossa/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-casarossa" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-podere-montefiore">
-<td>26</td>
+<td>25</td>
 <td><b>Agriturismo Podere Montefiore</b><br><span class="muted">Casatico PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, non adatto al telefono</span></td>
 <td>289 ⭐</td>
@@ -282,7 +275,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393775995620?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Montefiore.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-podere-montefiore/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-podere-montefiore" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-podere-massimo">
-<td>27</td>
+<td>26</td>
 <td><b>Podere Massimo</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>277 ⭐</td>
@@ -290,7 +283,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393407231041?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Massimo.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/podere-massimo/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="agri-podere-massimo" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-la-collina-del-sole">
-<td>28</td>
+<td>27</td>
 <td><b>Agriturismo La Collina del Sole</b><br><span class="muted">Varano Marchesi PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, non adatto al telefono</span></td>
 <td>233 ⭐</td>
@@ -298,13 +291,21 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@lacollinadelsole.it?subject=Sito%20nuovo%20per%20La%20Collina%20del&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20La%20Collina%20del.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-la-collina-del-sole/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-la-collina-del-sole" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-il-filare">
-<td>29</td>
+<td>28</td>
 <td><b>Agriturismo Il Filare</b><br><span class="muted">Bazzano PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, non adatto al telefono</span></td>
 <td>231 ⭐</td>
 <td><a class="b demo" href="https://mirondavide.com/agriturismo/agriturismo-il-filare/" target="_blank">Vedi sito</a></td>
 <td><a class="b wa" href="https://wa.me/393495829900?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Il%20Filare.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-il-filare/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a> <a class="b em" href="mailto:info@agriturismoilfilare.it?subject=Sito%20nuovo%20per%20Il%20Filare&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Il%20Filare.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/agriturismo-il-filare/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="agri-agriturismo-il-filare" onclick="tog(this)">○ Da inviare</button></td>
+</tr><tr class="tab-row agri" id="r-agri-santa-felicita">
+<td>29</td>
+<td><b>Santa Felicita</b><br><span class="muted">Parma PR</span></td>
+<td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
+<td>199 ⭐</td>
+<td><a class="b demo" href="https://mirondavide.com/agriturismo/santa-felicita/" target="_blank">Vedi sito</a></td>
+<td><a class="b wa" href="https://wa.me/393472386108?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Santa%20Felicita.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/santa-felicita/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a> <a class="b em" href="mailto:angela@agriturismosantafelicita.com?subject=Sito%20nuovo%20per%20Santa%20Felicita&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Santa%20Felicita.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/santa-felicita/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
+<td><button class="inv-btn" data-key="agri-santa-felicita" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row agri" id="r-agri-agriturismo-il-cielo-di-strela-azienda-agricola-bi">
 <td>30</td>
 <td><b>Agriturismo &quot;Il Cielo di Strela&quot; - Azienda Agricola Biologica</b><br><span class="muted">Strela PR</span></td>
@@ -538,16 +539,8 @@ tr:hover{background:#fdfaf5}
 <td><a class="b demo" href="https://mirondavide.com/agriturismo/trattoria-del-tribunale/" target="_blank">Vedi sito</a></td>
 <td><a class="b em" href="mailto:info@trattoriadeltribunale.it?subject=Sito%20nuovo%20per%20Del%20Tribunale&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Del%20Tribunale.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/trattoria-del-tribunale/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="risto-trattoria-del-tribunale" onclick="tog(this)">○ Da inviare</button></td>
-</tr><tr class="tab-row risto" id="r-risto-al-v-del">
-<td>4</td>
-<td><b>Al Vèdel</b><br><span class="muted">Colorno PR</span></td>
-<td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, copyright 2015</span></td>
-<td>2138 ⭐</td>
-<td><a class="b demo" href="https://mirondavide.com/agriturismo/al-v-del/" target="_blank">Vedi sito</a></td>
-<td><a class="b em" href="mailto:info@poderecadassa.it?subject=Sito%20nuovo%20per%20Al%20V%C3%A8del&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Al%20V%C3%A8del.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/al-v-del/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
-<td><button class="inv-btn" data-key="risto-al-v-del" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row risto" id="r-risto-antica-trattoria-leoni">
-<td>5</td>
+<td>4</td>
 <td><b>Antica Trattoria Leoni</b><br><span class="muted">Felino PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1936 ⭐</td>
@@ -555,7 +548,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:leoni@trattorialeoni.it?subject=Sito%20nuovo%20per%20Antica%20Trattoria%20Leoni&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Antica%20Trattoria%20Leoni.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/antica-trattoria-leoni/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="risto-antica-trattoria-leoni" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row risto" id="r-risto-antica-osteria-della-ghiaia">
-<td>6</td>
+<td>5</td>
 <td><b>Antica Osteria della Ghiaia</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1163 ⭐</td>
@@ -563,7 +556,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@osteriadellaghiaia.it?subject=Sito%20nuovo%20per%20Antica%20Osteria%20della&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Antica%20Osteria%20della.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/antica-osteria-della-ghiaia/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="risto-antica-osteria-della-ghiaia" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row risto" id="r-risto-da-gianni">
-<td>7</td>
+<td>6</td>
 <td><b>Da Gianni</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1152 ⭐</td>
@@ -571,13 +564,21 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@dagianniparma.it?subject=Sito%20nuovo%20per%20Da%20Gianni&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Da%20Gianni.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/da-gianni/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="risto-da-gianni" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row risto" id="r-risto-officina-alimentare-dedicata">
-<td>8</td>
+<td>7</td>
 <td><b>Officina Alimentare Dedicata</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1098 ⭐</td>
 <td><a class="b demo" href="https://mirondavide.com/agriturismo/officina-alimentare-dedicata/" target="_blank">Vedi sito</a></td>
 <td><a class="b em" href="mailto:utente@dominio.com?subject=Sito%20nuovo%20per%20Officina%20Alimentare%20Dedicata&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Officina%20Alimentare%20Dedicata.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/officina-alimentare-dedicata/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="risto-officina-alimentare-dedicata" onclick="tog(this)">○ Da inviare</button></td>
+</tr><tr class="tab-row risto" id="r-risto-ristorante-stella-di-mare">
+<td>8</td>
+<td><b>Ristorante Stella di Mare</b><br><span class="muted">Fidenza PR</span></td>
+<td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
+<td>805 ⭐</td>
+<td><a class="b demo" href="https://mirondavide.com/agriturismo/ristorante-stella-di-mare/" target="_blank">Vedi sito</a></td>
+<td><a class="b wa" href="https://wa.me/393519107712?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Stella%20di%20Mare.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-stella-di-mare/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a> <a class="b em" href="mailto:stelladimareristorante@gmail.com?subject=Sito%20nuovo%20per%20Stella%20di%20Mare&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Stella%20di%20Mare.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-stella-di-mare/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
+<td><button class="inv-btn" data-key="risto-ristorante-stella-di-mare" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row risto" id="r-risto-trattoria-menozzi">
 <td>9</td>
 <td><b>Trattoria Menozzi</b><br><span class="muted">Parma PR</span></td>
@@ -618,8 +619,16 @@ tr:hover{background:#fdfaf5}
 <td><a class="b demo" href="https://mirondavide.com/agriturismo/bequadro-restaurant-and-sound/" target="_blank">Vedi sito</a></td>
 <td><a class="b em" href="mailto:bequadrorestaurant@gmail.com?subject=Sito%20nuovo%20per%20Bequadro%20Restaurant%20and&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Bequadro%20Restaurant%20and.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/bequadro-restaurant-and-sound/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="risto-bequadro-restaurant-and-sound" onclick="tog(this)">○ Da inviare</button></td>
-</tr><tr class="tab-row risto" id="r-risto-ristorante-meme">
+</tr><tr class="tab-row risto" id="r-risto-ristorante-antica-tenuta-santa-teresa">
 <td>14</td>
+<td><b>Ristorante Antica Tenuta Santa Teresa</b><br><span class="muted">Parma PR</span></td>
+<td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, non adatto al telefono</span></td>
+<td>457 ⭐</td>
+<td><a class="b demo" href="https://mirondavide.com/agriturismo/ristorante-antica-tenuta-santa-teresa/" target="_blank">Vedi sito</a></td>
+<td><a class="b wa" href="https://wa.me/393482491140?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Antica%20Tenuta%20Santa.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-antica-tenuta-santa-teresa/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
+<td><button class="inv-btn" data-key="risto-ristorante-antica-tenuta-santa-teresa" onclick="tog(this)">○ Da inviare</button></td>
+</tr><tr class="tab-row risto" id="r-risto-ristorante-meme">
+<td>15</td>
 <td><b>Ristorante MEME</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>422 ⭐</td>
@@ -627,7 +636,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:prenotazione@ristorantememe.it?subject=Sito%20nuovo%20per%20MEME&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20MEME.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-meme/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="risto-ristorante-meme" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row risto" id="r-risto-osteria-la-gatta-matta">
-<td>15</td>
+<td>16</td>
 <td><b>Osteria La Gatta Matta</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>329 ⭐</td>
@@ -635,7 +644,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:osteriagattamatta@libero.it?subject=Sito%20nuovo%20per%20La%20Gatta%20Matta&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20La%20Gatta%20Matta.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/osteria-la-gatta-matta/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="risto-osteria-la-gatta-matta" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row risto" id="r-risto-brisla-trattoria">
-<td>16</td>
+<td>17</td>
 <td><b>Brisla Trattoria</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>209 ⭐</td>
@@ -659,8 +668,16 @@ tr:hover{background:#fdfaf5}
 <td><a class="b demo" href="https://mirondavide.com/agriturismo/ciore/" target="_blank">Vedi sito</a></td>
 <td><a class="b wa" href="https://wa.me/393383551711?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20Ciore.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ciore/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-ciore" onclick="tog(this)">○ Da inviare</button></td>
-</tr><tr class="tab-row pizze" id="r-pizze-pizzeria-il-duca-parma-oltre-l-integrale-pi-fibre-">
+</tr><tr class="tab-row pizze" id="r-pizze-soj">
 <td>3</td>
+<td><b>Soj</b><br><span class="muted">Parma PR</span></td>
+<td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
+<td>181 ⭐</td>
+<td><a class="b demo" href="https://mirondavide.com/agriturismo/soj/" target="_blank">Vedi sito</a></td>
+<td><a class="b wa" href="https://wa.me/393202644207?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20Soj.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/soj/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
+<td><button class="inv-btn" data-key="pizze-soj" onclick="tog(this)">○ Da inviare</button></td>
+</tr><tr class="tab-row pizze" id="r-pizze-pizzeria-il-duca-parma-oltre-l-integrale-pi-fibre-">
+<td>4</td>
 <td><b>Pizzeria il Duca Parma - Oltre L&#x27;integrale - Più Fibre - Meno Glicemia</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>159 ⭐</td>
@@ -668,7 +685,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393246023300?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20il%20Duca%20Parma.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/pizzeria-il-duca-parma-oltre-l-integrale-pi-fibre-/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-pizzeria-il-duca-parma-oltre-l-integrale-pi-fibre-" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-pizzeria-tramonti-2">
-<td>4</td>
+<td>5</td>
 <td><b>Pizzeria Tramonti 2</b><br><span class="muted">San Prospero PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>3932 ⭐</td>
@@ -676,7 +693,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393343501493?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Tramonti%202.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/pizzeria-tramonti-2/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-pizzeria-tramonti-2" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-antica-osteria-della-ghiaia">
-<td>5</td>
+<td>6</td>
 <td><b>Antica Osteria della Ghiaia</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1163 ⭐</td>
@@ -684,7 +701,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@osteriadellaghiaia.it?subject=Sito%20nuovo%20per%20Antica%20Osteria%20della&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Antica%20Osteria%20della.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/antica-osteria-della-ghiaia/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-antica-osteria-della-ghiaia" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-ristorante-pizzeria-san-mart-gilda-luciano-e-figli">
-<td>6</td>
+<td>7</td>
 <td><b>Ristorante Pizzeria San Martè Gilda, Luciano e figli dal1987</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1048 ⭐</td>
@@ -692,7 +709,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@ristorantesanmarte.it?subject=Sito%20nuovo%20per%20San%20Mart%C3%A8%20Gilda%2C&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20San%20Mart%C3%A8%20Gilda%2C.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-pizzeria-san-mart-gilda-luciano-e-figli/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-ristorante-pizzeria-san-mart-gilda-luciano-e-figli" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-ristorante-pizzeria-maria-luigia-luxury">
-<td>7</td>
+<td>8</td>
 <td><b>Ristorante pizzeria Maria Luigia Luxury</b><br><span class="muted">Traversetolo PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>938 ⭐</td>
@@ -700,7 +717,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@marialuigialuxury.com?subject=Sito%20nuovo%20per%20Maria%20Luigia%20Luxury&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Maria%20Luigia%20Luxury.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-pizzeria-maria-luigia-luxury/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-ristorante-pizzeria-maria-luigia-luxury" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-la-fiera-del-gusto">
-<td>8</td>
+<td>9</td>
 <td><b>La Fiera del Gusto</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>798 ⭐</td>
@@ -708,7 +725,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:lafieradelgusto@icloud.com?subject=Sito%20nuovo%20per%20La%20Fiera%20del&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20La%20Fiera%20del.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/la-fiera-del-gusto/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-la-fiera-del-gusto" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-pizzeria-majestic-da-gerry">
-<td>9</td>
+<td>10</td>
 <td><b>Pizzeria Majestic da Gerry</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>272 ⭐</td>
@@ -716,7 +733,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/3939052296?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Majestic%20da%20Gerry.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/pizzeria-majestic-da-gerry/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-pizzeria-majestic-da-gerry" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-trattoria-4-stagioni">
-<td>10</td>
+<td>11</td>
 <td><b>Trattoria 4 Stagioni</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>530 ⭐</td>
@@ -724,7 +741,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393336462807?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%204%20Stagioni.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/trattoria-4-stagioni/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-trattoria-4-stagioni" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-pizzeria-nuova-aurora">
-<td>11</td>
+<td>12</td>
 <td><b>Pizzeria Nuova Aurora</b><br><span class="muted">Felino PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>517 ⭐</td>
@@ -732,7 +749,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393393010475?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20Nuova%20Aurora.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/pizzeria-nuova-aurora/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-pizzeria-nuova-aurora" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-ciore">
-<td>12</td>
+<td>13</td>
 <td><b>Ciore</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>487 ⭐</td>
@@ -740,7 +757,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393383551711?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20Ciore.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ciore/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-ciore" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-istanbul-komshi-kebab">
-<td>13</td>
+<td>14</td>
 <td><b>Istanbul Komshi Kebab</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>104 ⭐</td>
@@ -748,7 +765,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393294221422?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20Istanbul%20Komshi%20Kebab.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/istanbul-komshi-kebab/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-istanbul-komshi-kebab" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-fab-bistr-in-fabula">
-<td>14</td>
+<td>15</td>
 <td><b>FAB Bistrò in Fabula</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>103 ⭐</td>
@@ -756,7 +773,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393802033490?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20FAB%20Bistr%C3%B2%20in.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/fab-bistr-in-fabula/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-fab-bistr-in-fabula" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-good-job-srls-servizi-per-aziende">
-<td>15</td>
+<td>16</td>
 <td><b>GOOD JOB SRLS SERVIZI PER AZIENDE</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>96 ⭐</td>
@@ -764,7 +781,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393509305000?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20GOOD%20JOB%20SRLS.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/good-job-srls-servizi-per-aziende/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-good-job-srls-servizi-per-aziende" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-ristorante-al-golf">
-<td>16</td>
+<td>17</td>
 <td><b>Ristorante al Golf</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>53 ⭐</td>
@@ -772,7 +789,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393494771711?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20al%20Golf.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-al-golf/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-ristorante-al-golf" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-istanbul-kebap">
-<td>17</td>
+<td>18</td>
 <td><b>Istanbul Kebap.</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>51 ⭐</td>
@@ -780,7 +797,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393394854334?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20Istanbul%20Kebap..%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/istanbul-kebap/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-istanbul-kebap" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-fior-di-pizza-parma">
-<td>18</td>
+<td>19</td>
 <td><b>Fior di Pizza Parma</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>42 ⭐</td>
@@ -788,7 +805,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393396959679?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20Fior%20di%20Pizza.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/fior-di-pizza-parma/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-fior-di-pizza-parma" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-birreria-red-fox-pub-salsomaggiore-terme">
-<td>19</td>
+<td>20</td>
 <td><b>Birreria Red Fox Pub Salsomaggiore Terme</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>39 ⭐</td>
@@ -796,7 +813,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393275824724?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20Birreria%20Red%20Fox.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/birreria-red-fox-pub-salsomaggiore-terme/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-birreria-red-fox-pub-salsomaggiore-terme" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-pizzeria-reale">
-<td>20</td>
+<td>21</td>
 <td><b>Pizzeria Reale</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#dc2626">SENZA SITO</span><br><span class="muted">nessun sito</span></td>
 <td>16 ⭐</td>
@@ -804,7 +821,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393716532633?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20creato%20un%20sito%20da%20zero%20per%20Reale.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/pizzeria-reale/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-pizzeria-reale" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-silvano-romani-i-km90">
-<td>21</td>
+<td>22</td>
 <td><b>Silvano Romani I Km90</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>9166 ⭐</td>
@@ -812,7 +829,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@km90.it?subject=Sito%20nuovo%20per%20Silvano%20Romani%20I&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Silvano%20Romani%20I.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/silvano-romani-i-km90/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-silvano-romani-i-km90" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-pizzeria-tramonti-2">
-<td>22</td>
+<td>23</td>
 <td><b>Pizzeria Tramonti 2</b><br><span class="muted">San Prospero PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>3930 ⭐</td>
@@ -820,7 +837,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393343501493?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Tramonti%202.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/pizzeria-tramonti-2/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-pizzeria-tramonti-2" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-hostaria-delle-terre-verdiane">
-<td>23</td>
+<td>24</td>
 <td><b>Hostaria delle Terre Verdiane</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">copyright 2016</span></td>
 <td>3006 ⭐</td>
@@ -828,7 +845,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@parmamenu.it?subject=Sito%20nuovo%20per%20Hostaria%20delle%20Terre&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Hostaria%20delle%20Terre.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/hostaria-delle-terre-verdiane/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-hostaria-delle-terre-verdiane" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-parmamen-fidenza-village">
-<td>24</td>
+<td>25</td>
 <td><b>Parmamenù - Fidenza Village</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">copyright 2016</span></td>
 <td>2424 ⭐</td>
@@ -836,7 +853,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:direttore.fidenzavillage@parmamenu.it?subject=Sito%20nuovo%20per%20Parmamen%C3%B9%20Fidenza%20Village&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Parmamen%C3%B9%20Fidenza%20Village.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/parmamen-fidenza-village/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-parmamen-fidenza-village" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-antica-trattoria-leoni">
-<td>25</td>
+<td>26</td>
 <td><b>Antica Trattoria Leoni</b><br><span class="muted">Felino PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1935 ⭐</td>
@@ -844,7 +861,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:leoni@trattorialeoni.it?subject=Sito%20nuovo%20per%20Antica%20Trattoria%20Leoni&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Antica%20Trattoria%20Leoni.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/antica-trattoria-leoni/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-antica-trattoria-leoni" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-osteria-di-fornio">
-<td>26</td>
+<td>27</td>
 <td><b>Osteria di Fornio</b><br><span class="muted">Fornio PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1382 ⭐</td>
@@ -852,7 +869,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@osteriafornio.it?subject=Sito%20nuovo%20per%20di%20Fornio&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20di%20Fornio.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/osteria-di-fornio/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-osteria-di-fornio" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-gustincanto">
-<td>27</td>
+<td>28</td>
 <td><b>Gustincanto</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1338 ⭐</td>
@@ -860,7 +877,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@gustincanto.it?subject=Sito%20nuovo%20per%20Gustincanto&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Gustincanto.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/gustincanto/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-gustincanto" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-ristorante-podere-san-faustino">
-<td>28</td>
+<td>29</td>
 <td><b>Ristorante Podere San Faustino</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1064 ⭐</td>
@@ -868,7 +885,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393891491867?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Podere%20San%20Faustino.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-podere-san-faustino/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-ristorante-podere-san-faustino" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-ristorante-pizzeria-san-mart-gilda-luciano-e-figli">
-<td>29</td>
+<td>30</td>
 <td><b>Ristorante Pizzeria San Martè Gilda, Luciano e figli dal1987</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>1048 ⭐</td>
@@ -876,7 +893,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@ristorantesanmarte.it?subject=Sito%20nuovo%20per%20San%20Mart%C3%A8%20Gilda%2C&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20San%20Mart%C3%A8%20Gilda%2C.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-pizzeria-san-mart-gilda-luciano-e-figli/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-ristorante-pizzeria-san-mart-gilda-luciano-e-figli" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-trattoria-oca-bianca">
-<td>30</td>
+<td>31</td>
 <td><b>Trattoria Oca Bianca</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, non adatto al telefono</span></td>
 <td>1026 ⭐</td>
@@ -884,7 +901,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@trattoriaocabianca.com?subject=Sito%20nuovo%20per%20Oca%20Bianca&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Oca%20Bianca.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/trattoria-oca-bianca/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-trattoria-oca-bianca" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-ristorante-pizzeria-maria-luigia-luxury">
-<td>31</td>
+<td>32</td>
 <td><b>Ristorante pizzeria Maria Luigia Luxury</b><br><span class="muted">Traversetolo PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>938 ⭐</td>
@@ -892,7 +909,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@marialuigialuxury.com?subject=Sito%20nuovo%20per%20Maria%20Luigia%20Luxury&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Maria%20Luigia%20Luxury.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/ristorante-pizzeria-maria-luigia-luxury/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-ristorante-pizzeria-maria-luigia-luxury" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-chalet-rocca-dei-folli-pizzeria-ristorante">
-<td>32</td>
+<td>33</td>
 <td><b>Chalet Rocca dei Folli | Pizzeria - Ristorante</b><br><span class="muted">Folli PC</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>836 ⭐</td>
@@ -900,7 +917,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@chaletroccadeifolli.it?subject=Sito%20nuovo%20per%20Chalet%20Rocca%20dei&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Chalet%20Rocca%20dei.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/chalet-rocca-dei-folli-pizzeria-ristorante/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-chalet-rocca-dei-folli-pizzeria-ristorante" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-timocenko">
-<td>33</td>
+<td>34</td>
 <td><b>Timocenko</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>811 ⭐</td>
@@ -908,7 +925,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:timocenko@gmail.com?subject=Sito%20nuovo%20per%20Timocenko&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Timocenko.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/timocenko/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-timocenko" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-la-fiera-del-gusto">
-<td>34</td>
+<td>35</td>
 <td><b>La Fiera del Gusto</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>798 ⭐</td>
@@ -916,7 +933,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:lafieradelgusto@icloud.com?subject=Sito%20nuovo%20per%20La%20Fiera%20del&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20La%20Fiera%20del.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/la-fiera-del-gusto/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-la-fiera-del-gusto" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-retrogusto-ristorante-pizzeria">
-<td>35</td>
+<td>36</td>
 <td><b>Retrogusto Ristorante Pizzeria</b><br><span class="muted">Fornovo di Taro PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>641 ⭐</td>
@@ -924,7 +941,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:leleleonetti@gmail.com?subject=Sito%20nuovo%20per%20Retrogusto%20Ristorante%20Pizzeria&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Retrogusto%20Ristorante%20Pizzeria.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/retrogusto-ristorante-pizzeria/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-retrogusto-ristorante-pizzeria" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-giardino-botanico-gavinell">
-<td>36</td>
+<td>37</td>
 <td><b>Giardino Botanico Gavinell</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS, non adatto al telefono</span></td>
 <td>564 ⭐</td>
@@ -932,7 +949,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@gavinell.it?subject=Sito%20nuovo%20per%20Giardino%20Botanico%20Gavinell&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Giardino%20Botanico%20Gavinell.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/giardino-botanico-gavinell/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-giardino-botanico-gavinell" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-taverna-dei-sapori">
-<td>37</td>
+<td>38</td>
 <td><b>Taverna Dei Sapori</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>504 ⭐</td>
@@ -940,7 +957,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393357015376?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Dei%20Sapori.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/taverna-dei-sapori/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a> <a class="b em" href="mailto:info@tavernadeisapori.it?subject=Sito%20nuovo%20per%20Dei%20Sapori&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Dei%20Sapori.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/taverna-dei-sapori/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-taverna-dei-sapori" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-griglieria-cucina-emiliana-e-tex-mex-pinsa-le-quat">
-<td>38</td>
+<td>39</td>
 <td><b>Griglieria Cucina Emiliana e Tex Mex Pinsa Le Quattro Lanterne</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">non adatto al telefono</span></td>
 <td>483 ⭐</td>
@@ -948,7 +965,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393292811231?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Griglieria%20Cucina%20Emiliana.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/griglieria-cucina-emiliana-e-tex-mex-pinsa-le-quat/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-griglieria-cucina-emiliana-e-tex-mex-pinsa-le-quat" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-lucechiara">
-<td>39</td>
+<td>40</td>
 <td><b>Lucechiara</b><br><span class="muted">Fidenza PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>430 ⭐</td>
@@ -956,7 +973,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@lucechiara.it?subject=Sito%20nuovo%20per%20Lucechiara&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20Lucechiara.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/lucechiara/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-lucechiara" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-a-casa-di-emilia">
-<td>40</td>
+<td>41</td>
 <td><b>A Casa di Emilia</b><br><span class="muted">Salsomaggiore Terme PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">copyright 2016</span></td>
 <td>95 ⭐</td>
@@ -964,7 +981,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b em" href="mailto:info@parmamenu.it?subject=Sito%20nuovo%20per%20A%20Casa%20di&amp;body=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20A%20Casa%20di.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/a-casa-di-emilia/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Il%20prezzo%20parte%20da%20%E2%82%AC500%20per%20una%20homepage%20completa%2C%20consegnata%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196%0A%0A---%0APer%20non%20ricevere%20altri%20messaggi%3A%20rispondete%20%27rimuovi%27.">📧 Email</a></td>
 <td><button class="inv-btn" data-key="pizze-a-casa-di-emilia" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-pizzeria-del-sasso">
-<td>41</td>
+<td>42</td>
 <td><b>Pizzeria del Sasso</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">non adatto al telefono</span></td>
 <td>24 ⭐</td>
@@ -972,7 +989,7 @@ tr:hover{background:#fdfaf5}
 <td><a class="b wa" href="https://wa.me/393514145438?text=Buongiorno%2C%0A%0Ami%20chiamo%20Davide%2C%20realizzo%20siti%20web%20per%20attivit%C3%A0%20locali.%0AHo%20preparato%20una%20versione%20pi%C3%B9%20moderna%20del%20sito%20per%20del%20Sasso.%0AEccolo%3A%20https%3A//mirondavide.com/agriturismo/pizzeria-del-sasso/%0A%0ALavoro%20da%20solo%20%E2%80%94%20niente%20agenzie.%20Prezzo%20da%20%E2%82%AC500%2C%20consegna%20in%2072%20ore.%0A%0ASe%20vi%20interessa%2C%20possiamo%20sentirci%2010%20minuti%20%E2%80%94%20anche%20al%20telefono%20o%20passo%20di%20persona.%0A%0AUn%20saluto%2C%0ADavide%20%E2%80%94%20379%20210%206196" target="_blank">📲 WhatsApp</a></td>
 <td><button class="inv-btn" data-key="pizze-pizzeria-del-sasso" onclick="tog(this)">○ Da inviare</button></td>
 </tr><tr class="tab-row pizze" id="r-pizze-parma-pizza-kebab">
-<td>42</td>
+<td>43</td>
 <td><b>Parma Pizza Kebab</b><br><span class="muted">Parma PR</span></td>
 <td><span class="tag" style="background:#d97706">SITO VECCHIO</span><br><span class="muted">no HTTPS</span></td>
 <td>14 ⭐</td>
@@ -999,6 +1016,22 @@ function showTab(id, btn) {
   localStorage.setItem('dash_tab', id);
 }
 
+function importaInviati() {
+  var input = document.createElement('input');
+  input.type = 'file'; input.accept = '.json';
+  input.onchange = function(e) {
+    var reader = new FileReader();
+    reader.onload = function(ev) {
+      var slugs = JSON.parse(ev.target.result);
+      var data = get();
+      slugs.forEach(function(s) { data[s] = true; });
+      localStorage.setItem('inv_agri', JSON.stringify(data));
+      location.reload();
+    };
+    reader.readAsText(e.target.files[0]);
+  };
+  input.click();
+}
 function esportaInviati() {
   var s = get();
   var lista = Object.keys(s).filter(k => s[k]);
